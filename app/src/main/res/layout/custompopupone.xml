@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:padding="5dp"
+    android:layout_gravity="center">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+
+
+        <RelativeLayout
+            android:id="@+id/park"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/white">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_weight="1"
+                android:background="@color/invisible"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="5dp"
+                app:contentPadding="1dp">
+
+                <RelativeLayout
+                    android:id="@+id/byo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:padding="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp">
+
+                        <TextView
+                            android:id="@+id/parkav"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Select Option"
+                            android:textSize="15sp"
+                            android:layout_alignParentStart="true"
+                            android:background="@color/invisible"
+                            android:fontFamily="sans-serif-smallcaps"
+                            android:textStyle="bold"
+                            android:textColor="@color/grey"
+                            />
+
+                        <TextView
+                            android:id="@+id/parkavtxt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:layout_toStartOf="@+id/btndown2"
+                            android:text=""
+                            android:textColor="@color/pure_black"
+                            android:textSize="15sp" />
+
+                        <Button
+                            android:id="@+id/btndown2"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentEnd="true"
+                            android:background="@color/invisible" />
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentEnd="true"
+                            app:srcCompat="@drawable/ic_down_grey_24dp" />
+
+                        <RelativeLayout
+                            android:id="@+id/relparking"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/parkavtxt"
+                            android:layout_marginTop="10dp">
+
+                            <RelativeLayout
+                                android:id="@+id/opt3"
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:background="@color/greybackground">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="30dp"
+                                    android:gravity="center"
+                                    android:text="Option One"
+                                    android:textSize="15sp" />
+
+                                <CheckBox
+                                    android:id="@+id/check_parkingone"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="30dp"
+                                    android:background="@color/invisible"
+                                    app:buttonTint="@color/invisible" />
+                            </RelativeLayout>
+
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/invisible"
+            android:forceHasOverlappingRendering="true"
+            app:cardBackgroundColor="@color/white"
+            app:cardElevation="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            app:cardPreventCornerOverlap="true">
+
+            <Button
+                android:id="@+id/btn_next"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/invisible"
+                android:fontFamily="sans-serif-light"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/gradient_1"
+                android:fontFamily="sans-serif-light"
+                android:text="Verify Email"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/text_seven"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="sans-serif-smallcaps"
+                android:gravity="center"
+                android:text="next"
+                android:textColor="@color/white"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+</LinearLayout>

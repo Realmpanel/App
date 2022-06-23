@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view"
+    >
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_dash"
+            android:icon="@drawable/ic_launcher_foreground"
+            android:title="Dashboard" />
+
+        <item
+            android:id="@+id/nav_clients"
+            android:icon="@drawable/ic_launcher_foreground"
+            android:title="Clients" />
+
+        <item
+            android:id="@+id/nav_loans"
+            android:icon="@drawable/ic_launcher_foreground"
+            android:title="Loans" />
+
+        <item
+            android:id="@+id/nav_leave"
+            android:icon="@drawable/ic_launcher_foreground"
+            android:title="Leave" />
+
+        <item
+            android:id="@+id/nav_salary"
+            android:icon="@drawable/ic_launcher_foreground"
+            android:title="Salary Advance" />
+
+        <item
+            android:id="@+id/nav_imprest"
+            android:icon="@drawable/ic_launcher_foreground"
+            android:title="Imprest" />
+
+    </group>
+
+    <item android:title="@string/more_drw">
+        <menu>
+
+            <item
+                android:id="@+id/nav_settings"
+                android:title="Settings" />
+
+        </menu>
+    </item>
+
+</menu>

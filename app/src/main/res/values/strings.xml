@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">RealmPanel</string>
+    <string name="lorem_one">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</string>
+    <string name="lorem">Lorem ipsum</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="forgot_password">Forgot your password?</string>
+    <string name="hint_code"> -  -  -  - </string>
+    <string name="more_drw">More</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+</resources>
