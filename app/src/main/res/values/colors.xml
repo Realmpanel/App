@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="colorAccent">#FDD835</color>
-    <color name="colorPrimary">#039BE5</color>
-    <color name="colorPrimaryDark">#039BE5</color>
+    <color name="colorPrimary">#008080</color>
+    <color name="colorPrimaryDark">#39ff14</color>
+    <color name="neon">#39ff14</color>
+    <color name="teal">#008080</color>
 
     <color name="reddish">#fb5252</color>
     <color name="timeorange">#ff8a65</color>

@@ -59,8 +59,8 @@ public class SplashActivity extends AppCompatActivity {
 
         ConstraintLayout constraintLayout = findViewById(R.id.layout);
         AnimationDrawable animationDrawable = (AnimationDrawable) constraintLayout.getBackground();
-        animationDrawable.setEnterFadeDuration(2000);
-        animationDrawable.setExitFadeDuration(4000);
+        animationDrawable.setEnterFadeDuration(4000);
+        animationDrawable.setExitFadeDuration(6000);
         animationDrawable.start();
 
     }

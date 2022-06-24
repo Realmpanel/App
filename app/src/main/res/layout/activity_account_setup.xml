@@ -29,7 +29,7 @@
             android:layout_below="@id/imaganim"
             android:layout_centerHorizontal="true"
             android:fontFamily="sans-serif-light"
-            android:text="Welcome to Realm Panel"
+            android:text="Welcome to ED Partners Africa"
             android:textColor="@color/text"
             android:textSize="18sp"
             android:textStyle="bold" />
@@ -74,7 +74,7 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@drawable/gradient_1"
+                android:background="@color/teal"
                 android:fontFamily="sans-serif-light"
                 android:text="Verify Email"
                 android:textColor="@color/white"
@@ -86,7 +86,7 @@
                 android:layout_height="match_parent"
                 android:fontFamily="sans-serif-smallcaps"
                 android:gravity="center"
-                android:text="Create Account"
+                android:text="Sign in"
                 android:textColor="@color/white"
                 android:textSize="17sp"
                 android:textStyle="bold" />

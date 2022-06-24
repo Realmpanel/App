@@ -4,13 +4,27 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/lgo"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/lgo"
         android:supportsRtl="true"
         android:theme="@style/Theme.RealmPanel">
-        <activity android:name=".Tools.Help"></activity>
-        <activity android:name=".AccountActivity.OTPVerification"
+        <activity android:name=".Clients.ClientName"></activity>
+        <activity
+            android:name=".Clients.Clients"
+            android:theme="@style/Theme.RealmPanel.NoActionBar" />
+        <activity
+            android:name=".Clients.ClientLeadThree"
+            android:theme="@style/Theme.RealmPanel.NoActionBar" />
+        <activity
+            android:name=".Clients.ClientLeadTwo"
+            android:theme="@style/Theme.RealmPanel.NoActionBar" />
+        <activity
+            android:name=".Clients.ClientLeadOne"
+            android:theme="@style/Theme.RealmPanel.NoActionBar" />
+        <activity android:name=".Tools.Help" />
+        <activity
+            android:name=".AccountActivity.OTPVerification"
             android:theme="@style/Theme.RealmPanel.NoActionBar" />
         <activity
             android:name=".AccountActivity.AccountSetup"
@@ -27,7 +41,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Nav.Home"
+        <activity
+            android:name=".Nav.Home"
             android:theme="@style/Theme.RealmPanel.NoActionBar" />
     </application>
 

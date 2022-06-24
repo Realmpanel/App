@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.RelativeLayout;
 
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
@@ -14,6 +15,9 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import com.google.android.material.navigation.NavigationView;
+
+import realmpanel.co.ke.Clients.ClientLeadOne;
+import realmpanel.co.ke.Clients.Clients;
 import realmpanel.co.ke.R;
 import realmpanel.co.ke.Tools.Help;
 
@@ -22,6 +26,7 @@ public class Home extends AppCompatActivity
 
     Toolbar toolbar;
     Button btnNewVisit;
+    RelativeLayout options;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,7 +34,7 @@ public class Home extends AppCompatActivity
         setContentView(R.layout.activity_home);
 
         toolbar = findViewById(R.id.toolbar);
-        toolbar.setTitle("Realm");
+        toolbar.setTitle("ED Partners");
         toolbar.setSubtitle("Pannel");
         setSupportActionBar(toolbar);
 
@@ -72,12 +77,27 @@ public class Home extends AppCompatActivity
                 final Dialog dialog = new Dialog(Home.this);
                 dialog.setContentView(R.layout.custompopuptwo);
                 dialog.setCancelable(true);
+//
+//                Button btnOpt = (Button) dialog.findViewById(R.id.btn_opt);
+//                btnOpt.setOnClickListener(new View.OnClickListener() {
+//                    @Override
+//                    public void onClick(View view) {
+////                        RelativeLayout Roptions = (RelativeLayout) findViewById(R.id.options);
+////                        Roptions.setVisibility(View.VISIBLE);
+//                    }
+//                });
+//                dialog.show();
 
                 Button btnNext = (Button) dialog.findViewById(R.id.btn_next_two);
                 btnNext.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
                         dialog.dismiss();
+
+                        Intent p = new Intent(Home.this, ClientLeadOne.class);
+                        overridePendingTransition(0, 0);
+                        startActivity(p);
+                        overridePendingTransition(0, 0);
                     }
                 });
                 dialog.show();
@@ -85,6 +105,31 @@ public class Home extends AppCompatActivity
         });
         dialog.show();
     }
+
+//    public void onClick_Opt1(View view) {
+//        RelativeLayout Roptions = (RelativeLayout) findViewById(R.id.options);
+//        Roptions.setVisibility(View.GONE);
+//    }
+//
+//    public void onClick_Opt2(View view) {
+//        RelativeLayout Roptions = (RelativeLayout) findViewById(R.id.options);
+//        Roptions.setVisibility(View.GONE);
+//    }
+//
+//    public void onClick_Opt3(View view) {
+//        RelativeLayout Roptions = (RelativeLayout) findViewById(R.id.options);
+//        Roptions.setVisibility(View.GONE);
+//    }
+//
+//    public void onClick_Opt4(View view) {
+//        RelativeLayout Roptions = (RelativeLayout) findViewById(R.id.options);
+//        Roptions.setVisibility(View.GONE);
+//    }
+//
+//    public void onClick_Opt5(View view) {
+//        RelativeLayout Roptions = (RelativeLayout) findViewById(R.id.options);
+//        Roptions.setVisibility(View.GONE);
+//    }
 
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
@@ -97,7 +142,7 @@ public class Home extends AppCompatActivity
                 break;
 
             case R.id.nav_clients:
-                Intent b = new Intent(this, Help.class);
+                Intent b = new Intent(this, Clients.class);
                 startActivity(b);
                 break;
 

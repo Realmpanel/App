@@ -1,242 +1,219 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="250dp"
+    android:layout_width="300dp"
     android:layout_height="wrap_content"
     android:layout_gravity="center"
     android:background="@color/white"
-    android:orientation="vertical"
-    android:padding="5dp">
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-
-        >
-
-
-        <RelativeLayout
-            android:id="@+id/park"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:background="@color/white">
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="left"
-                android:layout_weight="1"
-                android:background="@color/invisible"
-                app:cardBackgroundColor="@color/white"
-                app:cardCornerRadius="5dp"
-                app:contentPadding="1dp">
-
-                <RelativeLayout
-                    android:id="@+id/byo"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:background="@color/white"
-                    android:padding="10dp">
-
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="10dp">
-
-                        <TextView
-                            android:id="@+id/text_one"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_centerHorizontal="true"
-                            android:background="@color/invisible"
-                            android:fontFamily="sans-serif-smallcaps"
-                            android:text="Start Time"
-                            android:textColor="@color/grey"
-                            android:textSize="15sp"
-                            android:textStyle="bold"
-
-                            />
-
-
-                        <TextView
-                            android:id="@+id/parkavtxt"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="5dp"
-                            android:layout_toStartOf="@+id/btndown2"
-                            android:text=""
-                            android:textColor="@color/pure_black"
-                            android:textSize="15sp" />
-
-                        <Button
-                            android:id="@+id/btndown2"
-                            android:layout_width="20dp"
-                            android:layout_height="20dp"
-                            android:layout_alignParentEnd="true"
-                            android:background="@color/invisible" />
-
-                        <ImageView
-                            android:layout_width="20dp"
-                            android:layout_height="20dp"
-                            android:layout_alignParentEnd="true"
-                            app:srcCompat="@drawable/ic_down_grey_24dp" />
-
-                        <RelativeLayout
-                            android:id="@+id/relparking"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_below="@+id/parkavtxt"
-                            android:layout_marginTop="10dp">
-
-                            <TextView
-                                android:id="@+id/text_two"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:fontFamily="sans-serif-light"
-                                android:gravity="center"
-                                android:text="Enter the time the session started with client"
-                                android:textColor="@color/grey"
-                                android:textSize="15sp" />
-
-                            <RelativeLayout
-                                android:id="@+id/opt3"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_below="@+id/text_two"
-                                android:layout_marginTop="10dp"
-                                android:background="@color/fade_white">
-
-                                <RelativeLayout
-                                    android:id="@+id/picker"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    >
-
-                                    <TimePicker
-                                        android:id="@+id/timePicker101"
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_centerHorizontal="true"
-                                        android:timePickerMode="spinner"
-                                        />
-
-                                    <TextView
-                                        android:id="@+id/textView101"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:layout_below="@+id/timePicker101"
-                                        android:layout_marginTop="10dp"
-                                        android:textAlignment="center"
-                                        android:textStyle="bold"
-                                        android:textSize="18dp"/>
-
-                                </RelativeLayout>
-
-                                <RelativeLayout
-                                    android:id="@+id/am_pm"
-                                    android:layout_below="@id/picker"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginBottom="10dp"
-                                    >
-
-                                    <Button
-                                        android:id="@+id/button101"
-                                        android:layout_width="70dp"
-                                        android:layout_height="45dp"
-                                        android:textSize="14sp"
-                                        android:textStyle="bold"
-                                        android:text="AM"
-                                        android:background="@color/greenish"
-                                        android:layout_toStartOf="@id/central"
-                                        />
-
-
-                                    <TextView
-                                        android:id="@+id/central"
-                                        android:layout_width="0dp"
-                                        android:layout_height="0dp"
-                                        android:layout_centerInParent="true"
-                                        android:layout_marginStart="2dp"
-                                        android:layout_marginEnd="2dp"
-
-                                        />
-
-
-                                    <Button
-                                        android:id="@+id/button102"
-                                        android:layout_width="70dp"
-                                        android:layout_height="45dp"
-                                        android:textSize="14sp"
-                                        android:textStyle="bold"
-                                        android:text="PM"
-                                        android:background="@color/greybackground"
-                                        android:layout_toEndOf="@id/central"
-                                        />
-                                </RelativeLayout>
-
-
-
-                            </RelativeLayout>
-
-                        </RelativeLayout>
-                    </RelativeLayout>
-                </RelativeLayout>
-            </androidx.cardview.widget.CardView>
-        </RelativeLayout>
-
-
-    </RelativeLayout>
+    android:orientation="vertical">
 
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <androidx.cardview.widget.CardView
-            android:id="@+id/card_1"
+        <RelativeLayout
+            android:id="@+id/p1"
             android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:background="@color/invisible"
-            android:forceHasOverlappingRendering="true"
-            app:cardBackgroundColor="@color/white"
-            app:cardElevation="10dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="10dp"
-            app:cardPreventCornerOverlap="true">
+            android:layout_height="wrap_content">
 
-            <Button
-                android:id="@+id/btn_next_two"
+            <RelativeLayout
+                android:id="@+id/park"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/white">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_weight="1"
+                    android:background="@color/invisible"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="5dp"
+                    app:contentPadding="1dp">
+
+                    <RelativeLayout
+                        android:id="@+id/byo"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/white"
+                        android:padding="10dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp">
+
+                            <TextView
+                                android:id="@+id/text_one"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:background="@color/invisible"
+                                android:fontFamily="sans-serif-smallcaps"
+                                android:text="Start Time"
+                                android:textColor="@color/grey"
+                                android:textSize="15sp"
+                                android:textStyle="bold"
+
+                                />
+
+
+                            <RelativeLayout
+                                android:id="@+id/relparking"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/text_one"
+                                android:layout_marginTop="10dp">
+
+                                <TextView
+                                    android:id="@+id/text_two"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="sans-serif-light"
+                                    android:gravity="center"
+                                    android:text="Enter the time the session started with client"
+                                    android:textColor="@color/grey"
+                                    android:textSize="15sp" />
+
+                                <RelativeLayout
+                                    android:id="@+id/opt3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/text_two"
+                                    android:layout_marginTop="10dp"
+                                    android:background="@color/fade_white">
+
+                                    <RelativeLayout
+                                        android:id="@+id/picker"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+
+                                        <TimePicker
+                                            android:id="@+id/timePicker101"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerHorizontal="true"
+                                            android:timePickerMode="spinner" />
+
+                                        <TextView
+                                            android:id="@+id/textView101"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_below="@+id/timePicker101"
+                                            android:layout_marginTop="10dp"
+                                            android:textAlignment="center"
+                                            android:textSize="18dp"
+                                            android:textStyle="bold"
+                                            android:visibility="gone" />
+
+                                    </RelativeLayout>
+
+                                    <RelativeLayout
+                                        android:id="@+id/am_pm"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@id/picker"
+                                        android:layout_marginBottom="10dp"
+                                        android:visibility="gone">
+
+                                        <Button
+                                            android:id="@+id/button101"
+                                            android:layout_width="70dp"
+                                            android:layout_height="45dp"
+                                            android:layout_toStartOf="@id/central"
+                                            android:background="@color/greenish"
+                                            android:text="AM"
+                                            android:textSize="14sp"
+                                            android:textStyle="bold" />
+
+
+                                        <TextView
+                                            android:id="@+id/central"
+                                            android:layout_width="0dp"
+                                            android:layout_height="0dp"
+                                            android:layout_centerInParent="true"
+                                            android:layout_marginStart="2dp"
+                                            android:layout_marginEnd="2dp"
+
+                                            />
+
+
+                                        <Button
+                                            android:id="@+id/button102"
+                                            android:layout_width="70dp"
+                                            android:layout_height="45dp"
+                                            android:layout_toEndOf="@id/central"
+                                            android:background="@color/greybackground"
+                                            android:text="PM"
+                                            android:textSize="14sp"
+                                            android:textStyle="bold" />
+                                    </RelativeLayout>
+
+
+                                </RelativeLayout>
+
+                            </RelativeLayout>
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/p1"
+            android:layout_marginBottom="10dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
                 android:background="@color/invisible"
-                android:fontFamily="sans-serif-light"
-                android:textColor="@color/white"
-                android:textSize="18sp" />
+                android:forceHasOverlappingRendering="true"
+                app:cardBackgroundColor="@color/white"
+                app:cardElevation="10dp"
+                app:cardPreventCornerOverlap="true">
 
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@drawable/gradient_1"
-                android:fontFamily="sans-serif-light"
-                android:text="Verify Email"
-                android:textColor="@color/white"
-                android:textSize="18sp" />
+                <Button
+                    android:id="@+id/btn_next_two"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/invisible"
+                    android:fontFamily="sans-serif-light"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
 
-            <TextView
-                android:id="@+id/text_seven"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:fontFamily="sans-serif-smallcaps"
-                android:gravity="center"
-                android:text="next"
-                android:textColor="@color/white"
-                android:textSize="17sp"
-                android:textStyle="bold" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:fontFamily="sans-serif-light"
+                    android:text="Verify Email"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
 
-        </androidx.cardview.widget.CardView>
+                <TextView
+                    android:id="@+id/text_seven"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:gravity="center"
+                    android:text="next"
+                    android:textColor="@color/teal"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
 
     </RelativeLayout>
+
 
 </LinearLayout>

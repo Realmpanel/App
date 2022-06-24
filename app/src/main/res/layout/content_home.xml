@@ -20,7 +20,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
-                android:layout_marginTop="80dp"
+                android:layout_marginTop="70dp"
                 android:layout_marginEnd="10dp">
 
                 <TextView
@@ -46,43 +46,17 @@
                     android:textStyle="bold"
                     android:textSize="17sp" />
 
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/card2"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
+
+                <ImageView
+                    android:id="@+id/ty"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
                     android:layout_alignParentEnd="true"
-                    android:layout_marginTop="15dp"
-                    android:layout_marginEnd="20dp"
-                    android:layout_weight="1"
-                    android:background="@color/invisible"
-                    android:elevation="1dp"
-                    app:cardBackgroundColor="@color/text"
-                    app:cardCornerRadius="15dp"
-                    app:contentPadding="1dp">
-
-                    <androidx.cardview.widget.CardView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:background="@color/invisible"
-                        android:elevation="1dp"
-                        app:cardBackgroundColor="@color/white"
-                        app:cardCornerRadius="15dp"
-                        app:contentPadding="1dp">
-
-                        <RelativeLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content">
-
-                            <ImageView
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:src="@drawable/profile" />
-
-                        </RelativeLayout>
-                    </androidx.cardview.widget.CardView>
-
-                </androidx.cardview.widget.CardView>
+                    android:layout_marginEnd="10dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/ic_baseline_notifications_none_24"
+                    android:padding="4dp" />
 
             </RelativeLayout>
 
@@ -106,13 +80,13 @@
                     <WebView
                         android:id="@+id/webview"
                         android:layout_width="match_parent"
-                        android:layout_height="250dp" />
+                        android:layout_height="200dp" />
 
 
                     <ImageView
                         android:layout_width="match_parent"
-                        android:layout_height="250dp"
-                        android:src="@color/colorPrimary" />
+                        android:layout_height="200dp"
+                        android:src="@color/teal" />
 
                 </RelativeLayout>
             </androidx.cardview.widget.CardView>
@@ -262,18 +236,19 @@
                     <RelativeLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
                         android:layout_weight="1">
 
                         <androidx.cardview.widget.CardView
                             android:id="@+id/left1"
                             android:layout_width="match_parent"
-                            android:layout_height="120dp"
+                            android:layout_height="100dp"
                             android:layout_marginTop="10dp"
-                            android:layout_marginEnd="10dp"
                             android:layout_marginBottom="10dp"
                             android:background="@color/white"
                             android:forceHasOverlappingRendering="true"
-                            app:cardBackgroundColor="@color/colorPrimary"
+                            app:cardBackgroundColor="@color/fade_white"
                             app:cardCornerRadius="20sp"
                             app:cardElevation="5dp"
                             app:cardPreventCornerOverlap="true">
@@ -282,9 +257,9 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:layout_margin="2dp"
-                                android:background="@color/white"
+                                android:background="#ECFEFF"
                                 android:forceHasOverlappingRendering="true"
-                                app:cardBackgroundColor="@color/white"
+                                app:cardBackgroundColor="#ECFEFF"
                                 app:cardCornerRadius="20sp"
                                 app:cardElevation="10dp"
                                 app:cardPreventCornerOverlap="true">
@@ -306,16 +281,17 @@
                                             android:gravity="center"
                                             android:text="50"
                                             android:textColor="@color/grey"
-                                            android:textSize="35sp" />
+                                            android:textSize="30sp"
+                                            android:textStyle="bold"/>
 
                                         <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
                                             android:fontFamily="sans-serif-light"
                                             android:gravity="center"
-                                            android:text="@string/lorem"
-                                            android:textColor="@color/grey"
-                                            android:textSize="15sp" />
+                                            android:text="Arreas"
+                                            android:textColor="@color/text"
+                                            android:textSize="17sp" />
                                     </LinearLayout>
 
                                 </RelativeLayout>
@@ -327,14 +303,13 @@
                         <androidx.cardview.widget.CardView
                             android:id="@+id/left2"
                             android:layout_width="match_parent"
-                            android:layout_height="120dp"
+                            android:layout_height="100dp"
                             android:layout_below="@id/left1"
                             android:layout_marginTop="10dp"
-                            android:layout_marginEnd="10dp"
                             android:layout_marginBottom="10dp"
                             android:background="@color/white"
                             android:forceHasOverlappingRendering="true"
-                            app:cardBackgroundColor="@color/colorPrimary"
+                            app:cardBackgroundColor="@color/fade_white"
                             app:cardCornerRadius="20sp"
                             app:cardElevation="5dp"
                             app:cardPreventCornerOverlap="true">
@@ -345,7 +320,7 @@
                                 android:layout_margin="2dp"
                                 android:background="@color/white"
                                 android:forceHasOverlappingRendering="true"
-                                app:cardBackgroundColor="@color/white"
+                                app:cardBackgroundColor="#E5FFF1"
                                 app:cardCornerRadius="20sp"
                                 app:cardElevation="10dp"
                                 app:cardPreventCornerOverlap="true">
@@ -367,16 +342,17 @@
                                             android:gravity="center"
                                             android:text="50"
                                             android:textColor="@color/grey"
-                                            android:textSize="35sp" />
+                                            android:textSize="30sp"
+                                            android:textStyle="bold"/>
 
                                         <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
                                             android:fontFamily="sans-serif-light"
                                             android:gravity="center"
-                                            android:text="@string/lorem"
+                                            android:text="Disbursments"
                                             android:textColor="@color/grey"
-                                            android:textSize="15sp" />
+                                            android:textSize="17sp" />
                                     </LinearLayout>
 
                                 </RelativeLayout>
@@ -389,14 +365,13 @@
                         <androidx.cardview.widget.CardView
                             android:id="@+id/left3"
                             android:layout_width="match_parent"
-                            android:layout_height="120dp"
+                            android:layout_height="100dp"
                             android:layout_below="@id/left2"
                             android:layout_marginTop="10dp"
-                            android:layout_marginEnd="10dp"
                             android:layout_marginBottom="10dp"
                             android:background="@color/white"
                             android:forceHasOverlappingRendering="true"
-                            app:cardBackgroundColor="@color/colorPrimary"
+                            app:cardBackgroundColor="@color/fade_white"
                             app:cardCornerRadius="20sp"
                             app:cardElevation="5dp"
                             app:cardPreventCornerOverlap="true">
@@ -407,7 +382,7 @@
                                 android:layout_margin="2dp"
                                 android:background="@color/white"
                                 android:forceHasOverlappingRendering="true"
-                                app:cardBackgroundColor="@color/white"
+                                app:cardBackgroundColor="#FEEFED"
                                 app:cardCornerRadius="20sp"
                                 app:cardElevation="10dp"
                                 app:cardPreventCornerOverlap="true">
@@ -429,16 +404,18 @@
                                             android:gravity="center"
                                             android:text="50"
                                             android:textColor="@color/grey"
-                                            android:textSize="35sp" />
+                                            android:textSize="30sp"
+                                            android:textStyle="bold"/>
 
                                         <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
                                             android:fontFamily="sans-serif-light"
                                             android:gravity="center"
-                                            android:text="@string/lorem"
+                                            android:text="Cross Loan books"
                                             android:textColor="@color/grey"
-                                            android:textSize="15sp" />
+                                            android:textSize="17sp" />
+
                                     </LinearLayout>
 
                                 </RelativeLayout>
@@ -453,19 +430,20 @@
                     <RelativeLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginStart="10dp"
                         android:layout_weight="1">
 
 
                         <androidx.cardview.widget.CardView
                             android:id="@+id/right1"
                             android:layout_width="match_parent"
-                            android:layout_height="120dp"
-                            android:layout_marginStart="10dp"
+                            android:layout_height="100dp"
                             android:layout_marginTop="10dp"
                             android:layout_marginBottom="10dp"
                             android:background="@color/white"
                             android:forceHasOverlappingRendering="true"
-                            app:cardBackgroundColor="@color/colorPrimary"
+                            app:cardBackgroundColor="@color/fade_white"
                             app:cardCornerRadius="20sp"
                             app:cardElevation="5dp"
                             app:cardPreventCornerOverlap="true">
@@ -476,7 +454,7 @@
                                 android:layout_margin="2dp"
                                 android:background="@color/white"
                                 android:forceHasOverlappingRendering="true"
-                                app:cardBackgroundColor="@color/white"
+                                app:cardBackgroundColor="#FEEFED"
                                 app:cardCornerRadius="20sp"
                                 app:cardElevation="10dp"
                                 app:cardPreventCornerOverlap="true">
@@ -498,16 +476,17 @@
                                             android:gravity="center"
                                             android:text="50"
                                             android:textColor="@color/grey"
-                                            android:textSize="35sp" />
+                                            android:textSize="30sp"
+                                            android:textStyle="bold"/>
 
                                         <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
                                             android:fontFamily="sans-serif-light"
                                             android:gravity="center"
-                                            android:text="@string/lorem"
+                                            android:text="Loans Issued"
                                             android:textColor="@color/grey"
-                                            android:textSize="15sp" />
+                                            android:textSize="17sp" />
                                     </LinearLayout>
 
                                 </RelativeLayout>
@@ -520,14 +499,13 @@
                         <androidx.cardview.widget.CardView
                             android:id="@+id/right2"
                             android:layout_width="match_parent"
-                            android:layout_height="120dp"
+                            android:layout_height="100dp"
                             android:layout_below="@id/right1"
-                            android:layout_marginStart="10dp"
                             android:layout_marginTop="10dp"
                             android:layout_marginBottom="10dp"
                             android:background="@color/white"
                             android:forceHasOverlappingRendering="true"
-                            app:cardBackgroundColor="@color/colorPrimary"
+                            app:cardBackgroundColor="@color/fade_white"
                             app:cardCornerRadius="20sp"
                             app:cardElevation="5dp"
                             app:cardPreventCornerOverlap="true">
@@ -538,7 +516,7 @@
                                 android:layout_margin="2dp"
                                 android:background="@color/white"
                                 android:forceHasOverlappingRendering="true"
-                                app:cardBackgroundColor="@color/white"
+                                app:cardBackgroundColor="#DBE8EC"
                                 app:cardCornerRadius="20sp"
                                 app:cardElevation="10dp"
                                 app:cardPreventCornerOverlap="true">
@@ -560,16 +538,17 @@
                                             android:gravity="center"
                                             android:text="50"
                                             android:textColor="@color/grey"
-                                            android:textSize="35sp" />
+                                            android:textSize="30sp"
+                                            android:textStyle="bold"/>
 
                                         <TextView
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
                                             android:fontFamily="sans-serif-light"
                                             android:gravity="center"
-                                            android:text="@string/lorem"
+                                            android:text="Interest Income"
                                             android:textColor="@color/grey"
-                                            android:textSize="15sp" />
+                                            android:textSize="17sp" />
                                     </LinearLayout>
 
                                 </RelativeLayout>
@@ -585,7 +564,7 @@
                             android:layout_height="50dp"
                             android:layout_below="@id/right2"
                             android:layout_centerHorizontal="true"
-                            android:layout_marginTop="40dp"
+                            android:layout_marginTop="30dp"
                             android:onClick="onClick_Next"
                             android:background="@color/white"
                             android:forceHasOverlappingRendering="true"
@@ -632,10 +611,11 @@
                             android:layout_centerHorizontal="true"
                             android:layout_marginTop="5dp"
                             android:fontFamily="sans-serif-light"
+                            android:textStyle="bold"
                             android:gravity="center"
-                            android:text="@string/lorem"
+                            android:text="New Visit"
                             android:textColor="@color/grey"
-                            android:textSize="15sp" />
+                            android:textSize="17sp" />
 
                     </RelativeLayout>
 
